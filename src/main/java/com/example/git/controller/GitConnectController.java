@@ -32,7 +32,7 @@ public class GitConnectController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/showGist", method = RequestMethod.GET)
+	@RequestMapping(value = "showGist", method = RequestMethod.GET)
 	public String showGist(ModelMap model, @RequestParam String code) {
 		try {
 			getAuthenticationData(code);
